@@ -13,11 +13,11 @@
 }
 @font-face {
    font-family: Skranji;
-   src: url(assests/font/Skranji/Skranji-Bold.ttf);
+   src: url(/assests/font/Skranji/Skranji-Bold.ttf);
 }
 @font-face {
    font-family: Poppins;
-   src: url(assests/font/Poppins/Poppins-Black.ttf);
+   src: url(/assests/font/Poppins/Poppins-Black.ttf);
 }
 /* Index.html */
 * {
