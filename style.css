@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+   font-family: Righteous;
+   src: url(/assests/font/Righteous/Righteous-Regular.ttf);
+}
+@font-face {
+   font-family: Satisfy;
+   src: url(/assests/font/Satisfy/Satisfy-Regular.ttf);
+}
+@font-face {
+   font-family: SweetCherry;
+   src: url(/assests/font/SweetCherryFree/Sweet\ Cherry\ Free.otf);
+}
+@font-face {
+   font-family: Skranji;
+   src: url(assests/font/Skranji/Skranji-Bold.ttf);
+}
+@font-face {
+   font-family: Poppins;
+   src: url(assests/font/Poppins/Poppins-Black.ttf);
+}
+/* Index.html */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+   scroll-behavior: smooth;
+   scroll-padding-top: 100px;
+}
+/* Styles for index.html */
+.main {
+   width: 90%;
+   max-width: 500px;
+   margin: 30px auto;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 8px 0px;
+   background: rgb(255, 255, 255);
+}
+
+.heading {
+   padding: 20px;
+   border-bottom-left-radius: 50%;
+   border-bottom-right-radius: 50%;
+   background: #4a00e0;
+   background: linear-gradient(to right, #120a22, #b17be1);
+}
+
+.heading h1 {
+   text-align: center;
+   color: white;
+   font-family: Righteous;
+   margin: 32px auto;
+   font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.main-heading {
+   text-align: center;
+}
+
+.main-heading h1 {
+   font-size: 4rem;
+   font-family: Satisfy;
+   color: darkred;
+   text-shadow: 3px 3px 3px #ababab;
+}
+
+.main-heading h3 {
+   margin-top: 30px;
+   font-size: 4rem;
+   color: #eea11d;
+   font-family: SweetCherry;
+   text-shadow: 3px 3px 3px #ababab;
+}
+
+.buttons {
+   text-align: center;
+}
+
+.buttons img {
+   margin-top: 30px;
+   width: 60%;
+   max-width: 300px;
+   box-shadow: rgba(252, 245, 245, 0.2) 0px 2px 8px 0px;
+}
+
+.img-tree {
+   margin-top: 20px;
+   text-align: center;
+}
+
+.img-tree img {
+   max-width: 100%;
+   height: auto;
+   width: auto\9; /* IE8 */
+}
+
+/** Styles for kids.html */
+.wrapper {
+   margin: 20px auto;
+   padding: 40px 20px;
+}
+
+.wrapper h3 {
+   font-family: Righteous;
+   font-size: 6rem;
+   color: #8e2de2;
+   text-shadow: 3px 3px 3px #ababab;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.sticky-nav {
+   position: sticky;
+   top: 0;
+   background-color: #fff;
+   z-index: 1000;
+   padding: 5px;
+}
+
+.alphabets {
+   margin: 0 auto;
+   text-align: center;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.alphabets a {
+   font-size: 30px;
+   margin: 5px;
+   text-decoration: none;
+   padding: 10px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   color: #551a88;
+   font-family: Skranji;
+   display: inline-block;
+   transition: 0.3s ease;
+}
+
+.alphabets a:hover {
+   border-radius: 20%;
+   transform: scale(1.2);
+   color: #6f00ff;
+   box-shadow: 0.5px 0.5px 10px blue;
+}
+
+.table-details {
+   width: 100%;
+   max-width: 800px;
+   margin: 0 auto 50px;
+   overflow-x: auto;
+   padding-top: 60px;
+}
+
+.table-details h2 {
+   font-family: Righteous;
+   font-size: 40px;
+}
+
+.alpha-table {
+   border-radius: 12px;
+   background-color: #f9f6ff;
+   width: 100%;
+   margin: 0 auto;
+   table-layout: fixed;
+   border-collapse: separate;
+   border-spacing: 3em;
+   position: relative;
+   z-index: 1;
+}
+
+.alpha-table tr {
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   background-color: #f9f6ff;
+   margin-top: 20px;
+   border-radius: 15px;
+   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.alpha-table tr:hover {
+   transform: scale(1.01);
+   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.alpha-table td {
+   width: 33.33%;
+   padding: 50px;
+   text-align: center;
+   vertical-align: middle;
+}
+
+.alpha {
+   font-size: 80px;
+   font-family: Poppins;
+}
+
+.alpha-2 {
+   font-size: 70px;
+   font-family: SweetCherry;
+   margin-left: 18px;
+}
+
+.icon img {
+   max-width: 150px;
+}
+
+.alpha-2.A {
+   color: #ff1414;
+} /* Deep Pink */
+.alpha-2.B {
+   color: #9720a2;
+} /* Cyan */
+.alpha-2.C {
+   color: #d2b776;
+} /* Orange Red */
+.alpha-2.D {
+   color: #e58f3a;
+} /* Lime Green */
+.alpha-2.E {
+   color: #b4b8bb;
+} /* Gold */
+.alpha-2.F {
+   color: #7fd5ee;
+} /* Blue Violet */
+.alpha-2.G {
+   color: #feb902;
+} /* Hot Pink */
+.alpha-2.H {
+   color: #c70102;
+} /* Medium Spring Green */
+.alpha-2.I {
+   color: #b0d8bd;
+} /* Tomato */
+.alpha-2.J {
+   color: #1e90ff;
+} /* Dodger Blue */
+.alpha-2.K {
+   color: #71ca00;
+} /* Magenta */
+.alpha-2.L {
+   color: #ffc070;
+} /* Green Yellow */
+.alpha-2.M {
+   color: #f9cfa9;
+} /* Dark Orange */
+.alpha-2.N {
+   color: #d2b281;
+} /* Dark Turquoise */
+.alpha-2.O {
+   color: #f7b001;
+} /* Dark Violet */
+.alpha-2.P {
+   color: #3fb343;
+} /* Deep Pink */
+.alpha-2.Q {
+   color: #ba9e7b;
+} /* Spring Green */
+.alpha-2.R {
+   color: #99a9b3;
+} /* Crimson */
+.alpha-2.S {
+   color: #ffa705;
+} /* Chartreuse */
+.alpha-2.T {
+   color: #3d8c2d;
+} /* Orange Red */
+.alpha-2.U {
+   color: #4169e1;
+} /* Royal Blue */
+.alpha-2.V {
+   color: #ff4200;
+} /* Fuchsia */
+.alpha-2.W {
+   color: #896152;
+} /* Tomato */
+.alpha-2.X {
+   color: #504c4c;
+} /* Aqua */
+.alpha-2.Y {
+   color: #f2791c;
+} /* Lime Green */
+.alpha-2.Z {
+   color: #a09c9c;
+} /* Hot Pink */
+
+.back_top {
+   text-align: center;
+}
+.back_top img {
+   margin-top: 10px;
+   margin-bottom: 20px;
+   width: 150px;
+   transition: 0.3s ease;
+}
+.back_top img:hover {
+   transform: scale(1.05);
+   filter: drop-shadow(1px 1px 20px #00f500);
+}
+/** Responsive Styles for index.html */
+@media screen and (max-width: 768px) {
+   .main {
+      width: 95%;
+   }
+   .heading {
+      padding: 15px;
+   }
+   .main-heading h1,
+   .main-heading h3 {
+      margin-top: 20px;
+   }
+   .buttons img {
+      margin-top: 20px;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .main {
+      margin: 20px auto;
+   }
+   .heading {
+      padding: 10px;
+   }
+   .main-heading h1,
+   .main-heading h3 {
+      margin-top: 15px;
+   }
+   .buttons img {
+      margin-top: 15px;
+   }
+}
+
+/** Responsive Styles for kids.html */
+@media screen and (max-width: 768px) {
+   * {
+      scroll-padding-top: 250px; /* Adjust this value as needed */
+    }
+   .wrapper {
+      padding: 10px;
+   }
+   .wrapper h3 {
+      font-size: 4rem;
+   }
+   .alphabets {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .alphabets a {
+      margin: 5px;
+      font-size: 24px;
+   }
+   .alpha-table {
+      margin-top: 150px;
+      border-spacing: 1em;
+   }
+   .alpha-table tr {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      
+   }
+   .alpha-table td {
+      text-align: center;
+      padding: 10px 10px;
+   }
+   .table-details h2 {
+      font-size: 32px;
+   }
+   .alpha {
+      font-size: 60px;
+   }
+   .alpha-2 {
+      font-size: 50px;
+   }
+   .icon img {
+      max-width: 50px;
+   }
+}
+/*  */
+@media screen and (max-width: 480px) {
+   .wrapper h3 {
+      font-size: 3rem;
+   }
+   .alphabets a {
+      font-size: 20px;
+   }
+   .table-details h2 {
+      font-size: 28px;
+   }
+   .alpha {
+      font-size: 40px;
+   }
+   .alpha-2 {
+      font-size: 3rem;
+   }
+   .icon img {
+      max-width: 80px;
+   }
+   .back_top img{
+      width: 80px;
+   }
+}
